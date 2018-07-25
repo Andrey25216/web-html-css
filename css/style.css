@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,14 +19,18 @@ a:hover {
     width: 755px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .header__container {
     width: 535px;
     float: left;
-}
-.header__container:before{
-    clear: left;
 }
 
 .header__teaser {
@@ -52,13 +57,30 @@ a:hover {
     color: #6da2e1;
 }
 
+.banner {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner__content {
+    background: url("../images/banner.gif");
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 18px;
+    width: 728px;
+    height: 90px;
+    background-size: 100%;
+}
+
 .news__list {
     padding-left: 0;
 }
 
 .news__list .news__list-item {
     padding-bottom: 10px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .news__list-link {
@@ -68,6 +90,12 @@ a:hover {
 .course-currency .course-currency__item {
     float: left;
     padding-right: 10px;
+}
+
+.course-currency::after {
+    content: "";
+    display: block;
+    clear: left;
 }
 
 .course-currency__stock {
@@ -91,24 +119,110 @@ a:hover {
     color: #999999;
 }
 
-.section {
+.widgets {
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 13px;
+    font-size: 14px;
 }
-.section .section__column{
+
+.widgets .widgets__column {
     float: left;
 }
-.section__column {
+
+.widgets__column {
     width: 294px;
     margin-right: 6px;
 }
 
-.section__column::after{
+.widgets::after {
+    content: "";
     margin-right: 0;
+    clear: left;
+    display: block;
+}
+
+.weather, .services, .traffic, .tv-stream, .region, .poster {
+    padding: 8px 4px 4px 20px;
+    margin-top: 6px;
+}
+
+.weather__icon {
+    width: 32px;
+    height: 32px;
+    margin: -15px 7px -10px;
+}
+
+.weather__title, .services__title, .traffic__title, .tv-stream__title, .region__title, .poster__title {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 4px 8px 10px 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.service__list-title, .service__list-subtitle, .weather__temp,
+.weather__list-link, .traffic__subtitle, .traffic__title-points, .region__list-link, .poster__list-title, .tv-stream__program-title {
+    color: #000000;
+}
+
+.poster__list-subtitle, .tv-stream__program-subtitle {
+    color: #999999;
+}
+
+.service__list-title, .region__list-link {
+    font-weight: 700;
+}
+
+.traffic__subtitle {
+    display: block;
+}
+
+.weather__list-item, .services__list-item, .tv-stream__list-item, .region__list-item, .poster__list-item {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.poster__list-title, .tv-stream__program-title, .tv-stream__list-time {
+    margin-right: 8px;
+}
+
+.region__list-item {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 13px;
+}
+
+.region__list::after {
+    content: "";
+    display: block;
     clear: left;
 }
 
+.weather__list-item, .services__list-item:last-child {
+    margin-bottom: 0;
+}
 
+.poster__list-item:last-child {
+    margin-bottom: 0;
+}
 
+.tv-stream__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.region__list-item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.weather__list, .services__list, .tv-stream__list, .region__list, .poster__list {
+    font-style: normal;
+    display: block;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
