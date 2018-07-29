@@ -15,11 +15,13 @@ a:hover {
 }
 
 .header {
-    margin-top: 20px;
-    width: 755px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    width: 800px;
+    margin: 73px auto 15px;
+}
+
+.header__content {
+    padding-right: 36px;
+    display: block;
 }
 
 .header::after {
@@ -29,7 +31,7 @@ a:hover {
 }
 
 .header__container {
-    width: 535px;
+    width: 510px;
     float: left;
 }
 
@@ -38,23 +40,36 @@ a:hover {
     float: right;
 }
 
-.header__title {
-    display: inline;
+.teaser__title {
+    font-weight: 400;
 }
 
-.header__name .header__title {
-    font-size: 138.5%;
+.header__title {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.header__title-link {
+    margin-right: 12px;
+    color: #6da2e1;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.header__title-link:last-child {
+    margin-right: 0;
+}
+
+.tabs__active {
     color: #0054b9;
 }
 
-.header__name .header__time {
+.header__time {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #999999;
     font-size: 11px;
     padding-left: 10px;
-}
-
-.header__title span {
-    color: #6da2e1;
 }
 
 .banner {
@@ -74,25 +89,32 @@ a:hover {
     background-size: 100%;
 }
 
-.news__list {
+.tabs__list {
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
 }
 
-.news__list .news__list-item {
+.tabs__list .tabs__list-item {
     padding-bottom: 10px;
     font-size: 13px;
 }
 
-.news__list-link {
+.tabs__list-link {
     color: #000000;
 }
 
-.course-currency .course-currency__item {
+.header__teaser, .header__container {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.header__course-currency .course-currency__item {
     float: left;
     padding-right: 10px;
 }
 
-.course-currency::after {
+.header__course-currency::after {
     content: "";
     display: block;
     clear: left;
@@ -104,6 +126,7 @@ a:hover {
 
 .course-currency__cell {
     padding-left: 5px;
+    color: #d04d4d;
 }
 
 .course-currency__item .course-currency__link {
@@ -113,10 +136,6 @@ a:hover {
 .course-currency__link {
     color: #000000;
     font-weight: 700;
-}
-
-.course-currency__cell {
-    color: #999999;
 }
 
 .widgets {
@@ -165,11 +184,11 @@ a:hover {
 }
 
 .service__list-title, .service__list-subtitle, .weather__temp,
-.weather__list-link, .traffic__subtitle, .traffic__title-points, .region__list-link, .poster__list-title, .tv-stream__program-title {
+.weather__list-link, .traffic__subtitle, .traffic__title-points, .region__list-link, .poster__list-title, .tv-stream__program-title, .promo__content-link {
     color: #000000;
 }
 
-.poster__list-subtitle, .tv-stream__program-subtitle {
+.poster__list-subtitle, .tv-stream__program-subtitle, .sample__content-link {
     color: #999999;
 }
 
@@ -304,7 +323,7 @@ a:hover {
 }
 
 .search {
-    width: 900px;
+    width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 36px;
@@ -320,45 +339,85 @@ a:hover {
 .search__box {
     float: left;
 }
+
 .search::after {
     content: "";
     display: block;
     clear: left;
 }
-.search__tabs-item{
+
+.search__tabs-item {
     float: left;
     margin-right: 20px;
 }
+
 .search__tabs-item:last-child {
     margin-right: 0;
+}
+.search__tabs-list{
+    font-size: 15px;
 }
 .search__tabs::after {
     content: "";
     display: block;
     clear: left;
 }
-.search__menu{
+
+.search__menu {
     margin-top: 9px;
     margin-bottom: 10px;
 }
 
-.search__panel-input{
-    width: 83%;
+.search__content {
+    width: 880px;
+    padding-right: 50px;
+}
+
+.search__panel-input {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    outline: none;
+    width: 705px;
     height: 30px;
     font-weight: 400;
     border: 2px solid #F4CD00;
+    border-right: none;
 }
 
-.search__panel-button{
-    width: 88px;
-    height: 30px;
+.search__panel-button {
+    cursor: pointer;
+    outline: none;
     border: none;
+    width: 88px;
+    padding-bottom: 0;
+    height: 36px;
+    padding-top: -3px;
+    margin-left: -4px;
     background-color: #F4CD00;
 }
 
-.promo__element a{
+
+
+.search__promo {
+    margin-top: 8px;
+}
+
+.sample__content {
     float: left;
 }
-.sample__element{
+
+.promo__content-icon {
+    margin-top: -5px;
+    margin-right: 6px;
+}
+
+.promo__content {
     float: right;
+}
+
+.search__promo::after {
+    content: "";
+    display: block;
+    clear: both;
 }
