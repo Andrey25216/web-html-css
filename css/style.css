@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 81.25%;
+    font-size: 13px;
 }
 
 a {
@@ -11,41 +11,59 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: #d04d4d;
 }
 
 .header {
-    width: 800px;
-    margin: 73px auto 15px;
+    width: 900px;
+    margin: 68px auto 18px;
 }
 
 .header__content {
-    padding-right: 36px;
-    display: block;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 6px;
+    margin-bottom: 21px;
 }
 
-.header::after {
-    content: "";
-    display: block;
-    clear: both;
+.header__content:last-child {
+    margin-right: 0;
 }
 
-.header__container {
-    width: 510px;
-    float: left;
+.header__news {
+    width: 564px;
 }
 
 .header__teaser {
-    width: 220px;
-    float: right;
+    width: 270px;
+    padding-left: 25px;
 }
 
 .teaser__title {
     font-weight: 400;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .teaser__image-link {
     display: block;
+}
+
+.teaser__image {
+    width: 120px;
+}
+
+.teaser__age {
+    color: #999999;
+    margin-left: 2px;
+    font-size: 11px;
+    padding: 2px 3px;
+}
+
+.teaser__container {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .header__title {
@@ -73,7 +91,7 @@ a:hover {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #999999;
     font-size: 11px;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .ba-teaser {
@@ -83,7 +101,6 @@ a:hover {
 }
 
 .ba-teaser__content {
-    margin-left: 20px;
     margin-bottom: 18px;
 }
 
@@ -94,27 +111,21 @@ a:hover {
 .tabs__list {
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom: 10px;
     padding-left: 0;
 }
 
-.tabs__list .tabs__list-item {
-    padding-bottom: 10px;
+.tabs__list-item {
+    margin-bottom: 10px;
     font-size: 13px;
+}
+
+.tabs__list-item:last-child {
+    margin-bottom: 0;
 }
 
 .tabs__list-link {
     color: #000000;
-}
-
-.header__course-currency .course-currency__item {
-    float: left;
-    padding-right: 10px;
-}
-
-.header__course-currency::after {
-    content: "";
-    display: block;
-    clear: left;
 }
 
 .course-currency__stock {
@@ -130,6 +141,12 @@ a:hover {
     text-transform: uppercase;
 }
 
+.course-currency__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 14px;
+}
+
 .course-currency__link {
     color: #000000;
     font-weight: 700;
@@ -137,30 +154,27 @@ a:hover {
 
 .widgets {
     width: 900px;
+    font-size: 0;
     margin-left: auto;
     margin-right: auto;
-    font-size: 13px;
     margin-bottom: 30px;
 }
 
-.widgets .widgets__column {
-    float: left;
-}
-
 .widgets__column {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
     width: 294px;
     margin-right: 6px;
 }
 
-.widgets::after {
-    content: "";
+.widgets__column:last-child {
     margin-right: 0;
-    clear: left;
-    display: block;
 }
 
 .weather, .services, .traffic, .tv-stream, .region, .poster {
-    padding: 8px 4px 4px 20px;
+    padding-top: 8px;
+    padding-bottom: 4px;
     margin-top: 6px;
 }
 
@@ -290,7 +304,6 @@ a:hover {
 
 .weather__list, .services__list, .tv-stream__list, .region__list, .poster__list,
 .media__list, .business__list, .company__list, .search__tabs-list {
-    font-style: normal;
     display: block;
     list-style-type: none;
     padding-left: 0;
@@ -300,13 +313,12 @@ a:hover {
 
 .footer {
     background-color: #f0f0f0;
-
 }
 
 .footer__content {
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
-    width: 897px;
     padding-top: 32px;
     padding-bottom: 39px;
     font-size: 13px;
@@ -373,12 +385,19 @@ a:hover {
 }
 
 .search {
-    width: 1100px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 36px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 18px;
+}
+
+.search__logo {
+    padding-top: 2px;
+}
+
+.search__logo-link {
+    display: block;
 }
 
 .home__logo {
@@ -387,13 +406,8 @@ a:hover {
 }
 
 .search__box {
-    float: left;
-}
-
-.search::after {
-    content: "";
-    display: block;
-    clear: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .search__tabs-item {
@@ -422,7 +436,6 @@ a:hover {
 
 .search__content {
     width: 880px;
-    padding-right: 50px;
 }
 
 .search__panel-input {
@@ -430,10 +443,10 @@ a:hover {
     padding-right: 45px;
     font-size: 16px;
     outline: none;
-    width: 670px;
+    width: 671px;
     height: 30px;
     font-weight: 400;
-    border: 2px solid #F4CD00;
+    border: 2px solid #FFD633;
     border-right: none;
 }
 
@@ -442,10 +455,21 @@ a:hover {
     outline: none;
     border: none;
     width: 88px;
-    padding-bottom: 0;
     height: 36px;
     margin-left: -34px;
-    background-color: #F4CD00;
+    background-color: #FFD633;
+}
+
+.search__panel-button:hover {
+    background-color: #FFD133;
+}
+
+.search__panel-button:active {
+    background-color: #FFC633;
+}
+
+.button__text {
+    font-size: 16px;
 }
 
 .keyboard__icon {
