@@ -120,6 +120,7 @@
         <div class="search__panel">
             <form action="https://www.yandex.ru/search/" aria-label="Поиск в интернете">
                 <input class="search__panel-input" name="text">
+                <div class="keyboard__icon"></div>
                 <button class="search__panel-button">
                     <span class="button__text">Найти</span>
                 </button>
@@ -155,14 +156,16 @@
         <article class="weather">
             <h2 class="weather__title">
                 <a class="weather__link" href="https://yandex.ru/pogoda/samara">Погода</a>
-                <a class="weather__temp weather__icon-overcast" href="https://yandex.ru/pogoda/samara">+20 °C</a>
             </h2>
-            <ul class="weather__list">
-                <li class="weather__list-item">
-                    <a class="weather__list-link" href="https://yandex.ru/pogoda/samara">Ночью&nbsp;+18</a>,&nbsp;
-                    <a class="weather__list-link" href="https://yandex.ru/pogoda/samara">утром&nbsp;+22</a>
-                </li>
-            </ul>
+            <div class="weather__content">
+                <a class="weather__content-link" href="https://yandex.ru/pogoda/samara">
+                    <img class="weather__icon" src="images/weather/clear.svg"  width="48" height="48"><span class="weather__temp">+18°</span>
+                </a>
+                <div class="weather__forecast">
+                    <a class="weather__forecast-link" href="https://yandex.ru/pogoda/samara">Утром&nbsp;+19</a>,<br><a
+                        class="weather__forecast-link" href="https://yandex.ru/pogoda/samara">днём&nbsp;+24</a>
+                </div>
+            </div>
         </article>
         <article class="services">
             <h2 class="services__title">
@@ -207,10 +210,15 @@
         <article class="traffic">
             <h2 class="traffic__title">
                 <a class="traffic__title-jams" href="https://yandex.ru/maps/51/samara/probki">Пробки</a>
-                <a class="traffic__title-points " href="https://yandex.ru/maps/51/samara/probki"> 2 балла
-                </a>
             </h2>
-            <a class="traffic__subtitle" href="https://yandex.ru/maps/51/samara/probki">Дороги почти свободны</a>
+            <div class="traffic__content">
+                <a class="traffic__content-link" href="https://yandex.ru/maps/51/samara/probki">
+                    <img class="traffic__icon" src="images/traffic/green.svg"  width="33" height="30"><span class="traffic__rate">2</span>
+                </a>
+                <div class="traffic__forecast">
+                    <a class="weather__forecast-link" href="https://yandex.ru/maps/51/samara/probki">Дороги почти свободны</a>
+                </div>
+            </div>
         </article>
         <article class="tv-stream">
             <h2 class="tv-stream__title">

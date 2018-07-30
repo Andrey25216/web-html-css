@@ -104,11 +104,6 @@ a:hover {
     color: #000000;
 }
 
-.header__teaser, .header__container {
-    display: inline-block;
-    vertical-align: bottom;
-}
-
 .header__course-currency .course-currency__item {
     float: left;
     padding-right: 10px;
@@ -167,10 +162,50 @@ a:hover {
     margin-top: 6px;
 }
 
+.weather__content-link {
+    font-size: 28px;
+    color: #000000;
+}
+
+.weather__forecast {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.weather__temp {
+    vertical-align: top;
+}
+
 .weather__icon {
-    width: 32px;
-    height: 32px;
-    margin: -15px 7px -10px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.traffic__content-link {
+    font-size: 28px;
+    color: #000000;
+}
+
+.traffic__content {
+    height: 35px;
+}
+
+.traffic__content-link {
+    padding-right: 8px;
+}
+
+.traffic__icon {
+    padding-right: 8px;
+}
+
+.traffic__forecast {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+}
+
+.traffic__rate {
+    vertical-align: top;
 }
 
 .weather__title, .services__title, .traffic__title, .tv-stream__title, .region__title, .poster__title {
@@ -183,8 +218,12 @@ a:hover {
     font-weight: 400;
 }
 
-.service__list-title, .service__list-subtitle, .weather__temp,
-.weather__list-link, .traffic__subtitle, .traffic__title-points, .region__list-link, .poster__list-title, .tv-stream__program-title, .promo__content-link {
+.weather__content {
+    height: 35px;
+}
+
+.service__list-title, .service__list-subtitle, .weather__forecast-link,
+.weather__list-link, .region__list-link, .poster__list-title, .tv-stream__program-title, .promo__content-link {
     color: #000000;
 }
 
@@ -194,10 +233,6 @@ a:hover {
 
 .service__list-title, .region__list-link {
     font-weight: 700;
-}
-
-.traffic__subtitle {
-    display: block;
 }
 
 .weather__list-item, .services__list-item, .tv-stream__list-item, .region__list-item, .poster__list-item {
@@ -354,9 +389,11 @@ a:hover {
 .search__tabs-item:last-child {
     margin-right: 0;
 }
-.search__tabs-list{
+
+.search__tabs-list {
     font-size: 15px;
 }
+
 .search__tabs::after {
     content: "";
     display: block;
@@ -375,10 +412,10 @@ a:hover {
 
 .search__panel-input {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 45px;
     font-size: 16px;
     outline: none;
-    width: 705px;
+    width: 670px;
     height: 30px;
     font-weight: 400;
     border: 2px solid #F4CD00;
@@ -392,12 +429,26 @@ a:hover {
     width: 88px;
     padding-bottom: 0;
     height: 36px;
-    padding-top: -3px;
-    margin-left: -4px;
+    margin-left: -34px;
     background-color: #F4CD00;
 }
 
+.keyboard__icon {
+    background: url("../images/keyboard-icon.svg") no-repeat 50% 50%;
+    width: 27px;
+    height: 27px;
+    vertical-align: top;
+    display: inline-block;
+    top: 4px;
+    right: 40px;
+    position: relative;
+    cursor: pointer;
+    opacity: .5;
+}
 
+.keyboard__icon:hover {
+    opacity: .8;
+}
 
 .search__promo {
     margin-top: 8px;
