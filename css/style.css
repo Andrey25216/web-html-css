@@ -44,6 +44,10 @@ a:hover {
     font-weight: 400;
 }
 
+.teaser__image-link {
+    display: block;
+}
+
 .header__title {
     margin-top: 4px;
     margin-bottom: 10px;
@@ -72,21 +76,19 @@ a:hover {
     padding-left: 10px;
 }
 
-.banner {
+.ba-teaser {
     width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.banner__content {
-    background: url("../images/banner.gif");
-    position: relative;
-    cursor: pointer;
+.ba-teaser__content {
     margin-left: 20px;
     margin-bottom: 18px;
+}
+
+.ba-teaser__image {
     width: 728px;
-    height: 90px;
-    background-size: 100%;
 }
 
 .tabs__list {
@@ -208,6 +210,11 @@ a:hover {
     vertical-align: top;
 }
 
+.weather__content-link, .traffic__content-link {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 .weather__title, .services__title, .traffic__title, .tv-stream__title, .region__title, .poster__title {
     display: inline-block;
     vertical-align: top;
@@ -225,6 +232,14 @@ a:hover {
 .service__list-title, .service__list-subtitle, .weather__forecast-link,
 .weather__list-link, .region__list-link, .poster__list-title, .tv-stream__program-title, .promo__content-link {
     color: #000000;
+}
+
+.promo__content-link {
+    display: block;
+}
+
+.weather__content-link {
+    margin-right: 10px;
 }
 
 .poster__list-subtitle, .tv-stream__program-subtitle, .sample__content-link {
