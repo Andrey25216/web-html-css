@@ -8,11 +8,12 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__content header__news">
-        <div class="header__column">
+    <div class="header__column">
+        <div class="header__news">
             <div class="header__tabs">
                 <h1 class="header__title">
-                    <a class="header__title-link tabs__active" href="#">Сейчас в СМИ</a><a class="header__title-link" href="#">в Самаре</a>
+                    <a class="header__title-link tabs__active" href="#">Сейчас в СМИ</a><a class="header__title-link"
+                                                                                           href="#">в Самаре</a>
                 </h1>
                 <time class="header__time" datetime="2018-07-22T19:35">22 июля, воскресенье 19:35</time>
             </div>
@@ -33,12 +34,13 @@
                         <a class="tabs__list-link" href="#">Белоруссия обогнала Россию по уровню реальных зарплат</a>
                     </li>
                     <li class="tabs__list-item">
-                        <a class="tabs__list-link" href="#">Над авиабазой Хмеймим уничтожили два неизвестных беспилотника</a>
+                        <a class="tabs__list-link" href="#">Над авиабазой Хмеймим уничтожили два неизвестных
+                            беспилотника</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="header__column">
+        <div class="header__course-currency">
             <div class="course-currency__item">
                 <a class="course-currency__link" href="https://news.yandex.ru/quotes/2002.html">USD MOEX</a>
                 <span class="course-currency__stock">63,52</span>
@@ -47,21 +49,21 @@
             <div class="course-currency__item">
                 <a class="course-currency__link" href="https://news.yandex.ru/quotes/2000.html">EUR MOEX</a>
                 <span class="course-currency__stock">74,45</span>
-                <span class="course-currency__cell">+0,31</span>
+                <span class="course-currency__cell course-currency__rise">+0,31</span>
             </div>
             <div class="course-currency__item">
                 <a class="course-currency__link" href="https://news.yandex.ru/quotes/1006.html">Нефть</a>
                 <span class="course-currency__stock">63,52</span>
-                <span class="course-currency__cell">+0,63%</span>
+                <span class="course-currency__cell course-currency__rise">+0,63%</span>
             </div>
         </div>
     </div>
-    <div class="header__content header__teaser">
+    <div class="header__teaser">
         <div class="teaser">
-            <div class="teaser__container teaser__image">
-                <a class="teaser__image-link" href="#"><img class="teaser__image" src="images/header-teaser.png" alt="Голосовой помощник Алиса"></a>
-            </div>
-            <span class="teaser__container teaser__age">0+</span>
+            <a class="teaser__image-link" href="#">
+                <img class="teaser__image" src="images/header-teaser.png" alt="Голосовой помощник Алиса">
+            </a>
+            <span class="teaser__age">0+</span>
         </div>
         <div class="teaser__content">
             <h2 class="teaser__title"><a href="#">Что это за песня?</a></h2>
@@ -70,47 +72,44 @@
     </div>
 </header>
 <div class="search">
-    <!--<div class="search__box">-->
-        <!--<div class="search__logo">-->
-            <!--<a class="search__logo-link" href="http://yandex.ru/search/?text=%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%B0%D1%80%D1%81%D0%B0&amp;aoff=1&amp;nl=1">-->
-                <!--<img class="home__logo" alt="Великое противостояние марса, событие Яндекс" src="images/home-logo.png">-->
-            <!--</a>-->
-        <!--</div>-->
-    <!--</div>-->
-    <div class="search__box search__content">
-        <div class="search__menu">
-            <nav class="search__tabs">
-                <ul class="search__tabs-list">
-                    <li class="search__tabs-item">
-                        <a href="//yandex.ru/video">Видео</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="//yandex.ru/images">Картинки</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://news.yandex.ru/">Новости</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://yandex.ru/maps">Карты</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://market.yandex.ru/?clid=505&amp;utm_source=face_abovesearch&amp;utm_campaign=face_abovesearch">Маркет</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://translate.yandex.ru/">Переводчик</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://music.yandex.ru/">Музыка</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://yandex.ru?stream_channel=146">ТВ онлайн</a>
-                    </li>
-                    <li class="search__tabs-item">
-                        <a href="https://yandex.ru?stream_channel=146">ещё</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <div class="search__logo">
+        <a class="search__logo-link"
+           href="http://yandex.ru">
+            <img class="home__logo" alt="Яндекс" src="images/home-logo.svg">
+        </a>
+    </div>
+    <div class="search__content">
+        <nav class="search__menu">
+            <ul class="search__list">
+                <li class="search__list-item">
+                    <a href="//yandex.ru/video">Видео</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="//yandex.ru/images">Картинки</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://news.yandex.ru/">Новости</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://yandex.ru/maps">Карты</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://market.yandex.ru/?clid=505&amp;utm_source=face_abovesearch&amp;utm_campaign=face_abovesearch">Маркет</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://translate.yandex.ru/">Переводчик</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://music.yandex.ru/">Музыка</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://yandex.ru?stream_channel=146">ТВ онлайн</a>
+                </li>
+                <li class="search__list-item">
+                    <a href="https://yandex.ru?stream_channel=146">ещё</a>
+                </li>
+            </ul>
+        </nav>
         <div class="search__panel">
             <form action="https://www.yandex.ru/search/" aria-label="Поиск в интернете">
                 <input class="search__panel-input" name="text">
@@ -129,7 +128,9 @@
             </div>
             <div class="promo__content">
                 <a class="promo__content-link" href="#">
-                    <img class="promo__content-icon" src="https://avatars.mds.yandex.net/get-banana/26007/x25Cg4cNaSSaxxYhof47XJYvt_banana_20161021_60-36-bro-link-morda-update-7.png/optimize" alt="Установите современный браузер" width="30" height="18">Установите современный браузер
+                    <img class="promo__content-icon"
+                         src="https://avatars.mds.yandex.net/get-banana/26007/x25Cg4cNaSSaxxYhof47XJYvt_banana_20161021_60-36-bro-link-morda-update-7.png/optimize"
+                         alt="Установите современный браузер" width="30" height="18">Установите современный браузер
                 </a>
             </div>
         </div>
@@ -148,7 +149,8 @@
             </h2>
             <div class="weather__content">
                 <a class="weather__content-link" href="https://yandex.ru/pogoda/samara">
-                    <img class="weather__icon" src="images/weather/clear.svg" alt="Ясная погода" width="48" height="48" title="Ясная погода"><span class="weather__temp">+18°</span>
+                    <img class="weather__icon" src="images/weather/clear.svg" alt="Ясная погода" width="48" height="48"
+                         title="Ясная погода"><span class="weather__temp">+18°</span>
                 </a>
                 <div class="weather__forecast">
                     <a class="weather__forecast-link" href="https://yandex.ru/pogoda/samara">Утром&nbsp;+19</a>,<br><a
@@ -202,10 +204,12 @@
             </h2>
             <div class="traffic__content">
                 <a class="traffic__content-link" href="https://yandex.ru/maps/51/samara/probki">
-                    <img class="traffic__icon" src="images/traffic/green.svg"  width="33" height="30" alt="Дороги почти свободны" title="Дороги почти свободны"><span class="traffic__rate">2</span>
+                    <img class="traffic__icon" src="images/traffic/green.svg" width="33" height="30"
+                         alt="Дороги почти свободны" title="Дороги почти свободны"><span class="traffic__rate">2</span>
                 </a>
                 <div class="traffic__forecast">
-                    <a class="weather__forecast-link" href="https://yandex.ru/maps/51/samara/probki">Дороги почти свободны</a>
+                    <a class="weather__forecast-link" href="https://yandex.ru/maps/51/samara/probki">Дороги почти
+                        свободны</a>
                 </div>
             </div>
         </article>
