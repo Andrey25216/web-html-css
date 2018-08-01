@@ -396,12 +396,13 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    position: relative;
     margin-bottom: 18px;
 }
 
 .search__logo {
     position: absolute;
-    margin-left: -150px;
+    left: -150px;
 }
 
 .search__logo-link {
