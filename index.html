@@ -10,30 +10,35 @@
 <header class="header">
     <div class="header__column">
         <div class="header__news">
-            <div class="header__tabs">
-                <h1 class="header__title">
-                    <a class="header__title-link tabs__active" href="#">Сейчас в СМИ</a><a class="header__title-link" href="#">в Самаре</a>
-                </h1>
+            <div class="header__news-tabs">
+                <h2 class="header__tabs-title">
+                    <a class="header__tabs-link header__tabs-active" href="#">Сейчас в СМИ</a>
+                </h2>
+                <h2 class="header__tabs-title">
+                    <a class="header__tabs-link" href="#">в Самаре</a>
+                </h2>
                 <time class="header__time" datetime="2018-07-22T19:35">22 июля, воскресенье 19:35</time>
             </div>
-            <div class="header__tabs-content">
-                <ul class="tabs__list">
-                    <li class="tabs__list-item">
-                        <a class="tabs__list-link" href="#">Реакцию Порошенко на победу Усика назвали «идиотизмом»</a>
+            <div class="header__news-content">
+                <ul class="header__content-list">
+                    <li class="content__list-item">
+                        <a class="content__list-link" href="#">Реакцию Порошенко на победу Усика назвали
+                            «идиотизмом»</a>
                     </li>
-                    <li class="tabs__list-item">
-                        <a class="tabs__list-link" href="#">По делу о госизмене в «Роскосмосе» арестован 74-летний
+                    <li class="content__list-item">
+                        <a class="content__list-link" href="#">По делу о госизмене в «Роскосмосе» арестован 74-летний
                             ученый</a>
                     </li>
-                    <li class="tabs__list-item">
-                        <a class="tabs__list-link" href="#">Эксперт рассказал, зачем Израиль эвакуировал «Белых касок»
+                    <li class="content__list-item">
+                        <a class="content__list-link" href="#">Эксперт рассказал, зачем Израиль эвакуировал «Белых
+                            касок»
                             из Сирии</a>
                     </li>
-                    <li class="tabs__list-item">
-                        <a class="tabs__list-link" href="#">Белоруссия обогнала Россию по уровню реальных зарплат</a>
+                    <li class="content__list-item">
+                        <a class="content__list-link" href="#">Белоруссия обогнала Россию по уровню реальных зарплат</a>
                     </li>
-                    <li class="tabs__list-item">
-                        <a class="tabs__list-link" href="#">Над авиабазой Хмеймим уничтожили два неизвестных
+                    <li class="content__list-item">
+                        <a class="content__list-link" href="#">Над авиабазой Хмеймим уничтожили два неизвестных
                             беспилотника</a>
                     </li>
                 </ul>
@@ -43,7 +48,7 @@
             <div class="course-currency__item">
                 <a class="course-currency__link" href="https://news.yandex.ru/quotes/2002.html">USD MOEX</a>
                 <span class="course-currency__stock">63,52</span>
-                <span class="course-currency__cell">-0,14</span>
+                <span class="course-currency__cell course-currency__fall">-0,14</span>
             </div>
             <div class="course-currency__item">
                 <a class="course-currency__link" href="https://news.yandex.ru/quotes/2000.html">EUR MOEX</a>
@@ -65,18 +70,18 @@
             <span class="teaser__age">0+</span>
         </div>
         <div class="teaser__content">
-            <h2 class="teaser__title"><a href="#">Что это за песня?</a></h2>
-            <span class="teaser__subtitle">Алиса подскажет название и исполнителя</span>
+            <h2 class="teaser__content-title"><a href="#">Что это за песня?</a></h2>
+            <span class="teaser__content-subtitle">Алиса подскажет название и исполнителя</span>
         </div>
     </div>
 </header>
 <div class="search">
-    <div class="search__logo">
+    <h1 class="search__logo">
         <a class="search__logo-link"
            href="http://yandex.ru">
-            <img class="home__logo" alt="Яндекс" src="images/home-logo.svg">
+            <img class="search__logo-image" alt="Яндекс" src="images/home-logo.svg">
         </a>
-    </div>
+    </h1>
     <div class="search__content">
         <nav class="search__menu">
             <ul class="search__list">
@@ -110,35 +115,33 @@
             </ul>
         </nav>
         <div class="search__panel">
-            <form action="https://www.yandex.ru/search/" aria-label="Поиск в интернете">
+            <form class="search__panel-form" action="https://www.yandex.ru/search/" aria-label="Поиск в интернете">
                 <input class="search__panel-input" name="text">
                 <div class="keyboard__icon"></div>
                 <button class="search__panel-button">
                     <span class="button__text">Найти</span>
                 </button>
             </form>
-        </div>
-        <div class="search__promo">
-            <div class="sample__content">Найдётся всё.&nbsp;<span class="search__promo-text">Например,&nbsp;</span>
-                <a class="sample__content-link"
-                   href="https://www.yandex.ru/search/?lr=51&text=%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B2%D0%B5%D1%81%D0%B8%D1%82%20%D1%81%D0%BB%D0%BE%D0%BD">
-                    сколько весит слон
-                </a>
-            </div>
-            <div class="promo__content">
-                <a class="promo__content-link" href="#">
-                    <img class="promo__content-icon"
-                         src="https://avatars.mds.yandex.net/get-banana/26007/x25Cg4cNaSSaxxYhof47XJYvt_banana_20161021_60-36-bro-link-morda-update-7.png/optimize"
-                         alt="Установите современный браузер" width="30" height="18">Установите современный браузер
-                </a>
+            <div class="search__panel-sample">
+                <div class="sample__content">Найдётся всё.&nbsp;<span class="sample__content-text">Например,&nbsp;</span>
+                    <a class="sample__content-link"
+                       href="https://www.yandex.ru/search/?lr=51&text=%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B2%D0%B5%D1%81%D0%B8%D1%82%20%D1%81%D0%BB%D0%BE%D0%BD">
+                        сколько весит слон
+                    </a>
+                </div>
+                <div class="promo__content">
+                    <a class="promo__content-link" href="#">
+                        <img class="promo__content-icon"
+                             src="https://avatars.mds.yandex.net/get-banana/26007/x25Cg4cNaSSaxxYhof47XJYvt_banana_20161021_60-36-bro-link-morda-update-7.png/optimize"
+                             alt="Установите современный браузер" width="30" height="18">Установите современный браузер
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="ba-teaser">
-    <div class="ba-teaser__content">
         <img src="images/ba-teaser.gif" class="ba-teaser__image" alt="Яндекс Такси">
-    </div>
 </div>
 <div class="widgets">
     <div class="widgets__column">

@@ -17,6 +17,11 @@ a:hover {
 .header {
     width: 900px;
     margin: 68px auto 39px;
+
+}
+
+.header__news {
+    margin-bottom: 10px;
 }
 
 .header__column, .header__teaser {
@@ -33,10 +38,14 @@ a:hover {
     width: 270px;
 }
 
-.teaser__title {
+.teaser__content {
+    margin-top: 10px;
+}
+
+.teaser__content-title {
     font-weight: 400;
     font-size: 19px;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
@@ -60,29 +69,30 @@ a:hover {
     vertical-align: top;
 }
 
-.header__tabs {
-    padding-top: 4px;
-    padding-bottom: 10px;
+.header__news-tabs {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.header__title {
+.header__tabs-title {
+    margin-right: 12px;
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
+    vertical-align: baseline;
 }
 
-.header__title-link {
-    margin-right: 12px;
+.header__tabs-link {
     color: #6da2e1;
     font-weight: 400;
     font-size: 19px;
 }
 
-.header__title-link:last-child {
+.header__tabs-link:last-child {
     margin-right: 0;
 }
 
-.tabs__active {
+.header__tabs-active {
     color: #0054b9;
 }
 
@@ -90,16 +100,12 @@ a:hover {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #999999;
     font-size: 11px;
-    margin-left: 10px;
 }
 
 .ba-teaser {
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.ba-teaser__content {
     margin-bottom: 18px;
 }
 
@@ -107,37 +113,35 @@ a:hover {
     width: 728px;
 }
 
-.tabs__list {
+.header__content-list {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 10px;
     padding-left: 0;
 }
 
-.tabs__list-item {
+.content__list-item {
     margin-bottom: 10px;
     font-size: 13px;
 }
 
-.tabs__list-item:last-child {
+.content__list-item:last-child {
     margin-bottom: 0;
 }
 
-.tabs__list-link {
+.content__list-link {
     color: #000000;
 }
 
-.course-currency__stock {
-    padding-left: 5px;
+.course-currency__stock, .course-currency__cell {
+    margin-left: 5px;
 }
 
-.course-currency__cell {
-    padding-left: 5px;
-    color: #d04d4d;
-}
-
-.course-currency__rise{
+.course-currency__rise {
     color: #069922;
+}
+
+.course-currency__fall {
+    color: #d04d4d;
 }
 
 .course-currency__item .course-currency__link {
@@ -397,19 +401,21 @@ a:hover {
     margin-right: auto;
     display: block;
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
 }
 
 .search__logo {
     position: absolute;
-    left: -150px;
+    left: -145px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .search__logo-link {
     display: block;
 }
 
-.home__logo {
+.search__logo-image {
     width: 140px;
 }
 
@@ -433,12 +439,13 @@ a:hover {
 }
 
 .search__menu {
-    padding-top: 9px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .search__content {
     width: 880px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-right: 20px;
 }
 
@@ -448,32 +455,54 @@ a:hover {
     font-size: 16px;
     outline: none;
     width: 671px;
-    height: 30px;
+    height: 32px;
     font-weight: 400;
     border: 2px solid #FFD633;
     border-right: none;
 }
 
 .search__panel-button {
+    position: relative;
     cursor: pointer;
     outline: none;
     border: none;
     width: 88px;
+    right: 36px;
+    overflow: hidden;
+    background: 0 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: 2px;
+    border-bottom: 2px;
+
+}
+
+/*.search__panel-button:hover {*/
+/*background-color: #FFD133;*/
+/*}*/
+
+/*.search__panel-button:active {*/
+/*background-color: #FFC633;*/
+/*}*/
+
+.button__text {
+    display: block;
     height: 36px;
-    margin-left: -34px;
+    line-height: 36px;
+    position: relative;
+    font-size: 16px;
     background-color: #FFD633;
 }
 
-.search__panel-button:hover {
-    background-color: #FFD133;
-}
+.button__text::after {
+    content: "";
+    position: absolute;
+    border-width: 22px 0 22px 11px;
+    top: -4px;
 
-.search__panel-button:active {
-    background-color: #FFC633;
-}
-
-.button__text {
-    font-size: 16px;
+    border-style: solid;
+    border-color: rgba(255, 219, 76, 0);
+    border-left-color: inherit;
 }
 
 .keyboard__icon {
@@ -493,8 +522,8 @@ a:hover {
     opacity: .8;
 }
 
-.search__promo {
-    padding-top: 8px;
+.search__panel-form {
+    margin-bottom: 8px;
 }
 
 .sample__content {
@@ -510,7 +539,7 @@ a:hover {
     float: right;
 }
 
-.search__promo::after {
+.search__panel-sample::after {
     content: "";
     display: block;
     clear: both;
