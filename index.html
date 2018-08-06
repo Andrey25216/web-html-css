@@ -20,25 +20,25 @@
                 <time class="header__time" datetime="2018-07-22T19:35">22 июля, воскресенье 19:35</time>
             </div>
             <div class="header__news-content">
-                <ul class="header__content-list">
-                    <li class="content__list-item">
-                        <a class="content__list-link" href="#">Реакцию Порошенко на победу Усика назвали
+                <ul class="news__list">
+                    <li class="news__list-item">
+                        <a class="news__list-link" href="#">Реакцию Порошенко на победу Усика назвали
                             «идиотизмом»</a>
                     </li>
-                    <li class="content__list-item">
-                        <a class="content__list-link" href="#">По делу о госизмене в «Роскосмосе» арестован 74-летний
+                    <li class="news__list-item">
+                        <a class="news__list-link" href="#">По делу о госизмене в «Роскосмосе» арестован 74-летний
                             ученый</a>
                     </li>
-                    <li class="content__list-item">
-                        <a class="content__list-link" href="#">Эксперт рассказал, зачем Израиль эвакуировал «Белых
+                    <li class="news__list-item">
+                        <a class="news__list-link" href="#">Эксперт рассказал, зачем Израиль эвакуировал «Белых
                             касок»
                             из Сирии</a>
                     </li>
-                    <li class="content__list-item">
-                        <a class="content__list-link" href="#">Белоруссия обогнала Россию по уровню реальных зарплат</a>
+                    <li class="news__list-item">
+                        <a class="news__list-link" href="#">Белоруссия обогнала Россию по уровню реальных зарплат</a>
                     </li>
-                    <li class="content__list-item">
-                        <a class="content__list-link" href="#">Над авиабазой Хмеймим уничтожили два неизвестных
+                    <li class="news__list-item">
+                        <a class="news__list-link" href="#">Над авиабазой Хмеймим уничтожили два неизвестных
                             беспилотника</a>
                     </li>
                 </ul>
@@ -70,8 +70,8 @@
             <span class="teaser__age">0+</span>
         </div>
         <div class="teaser__content">
-            <h2 class="teaser__content-title"><a href="#">Что это за песня?</a></h2>
-            <span class="teaser__content-subtitle">Алиса подскажет название и исполнителя</span>
+            <h2 class="teaser__title"><a href="#">Что это за песня?</a></h2>
+            <span class="teaser__subtitle">Алиса подскажет название и исполнителя</span>
         </div>
     </div>
 </header>
@@ -115,23 +115,33 @@
             </ul>
         </nav>
         <div class="search__panel">
-            <form class="search__panel-form" action="https://www.yandex.ru/search/" aria-label="Поиск в интернете">
-                <input class="search__panel-input" name="text">
-                <i class="search__panel-keyboard" aria-label="Загрузка экранной клавиатуры"></i>
-                <button class="search__panel-button">
-                    <span class="button__text">Найти</span>
+            <form class="search__panel-form" action="https://www.yandex.ru/search/">
+                <div class="search__field">
+                    <input class="search__input" id="sample-input" type="text" placeholder="Найдется все" name="text">
+                    <button class="search__button search__reset" type="reset">
+                        <span class="visually-hidden">Очистить форму</span>
+                    </button>
+                    <button class="search__button search__keyboard" type="button">
+                        <span class="visually-hidden">Кнопка для отображения экранной клавиатуры</span>
+                    </button>
+                </div>
+                <button class="search__button search__submit" type="submit">
+                    <span class="submit__text">Найти</span>
                 </button>
             </form>
             <div class="search__panel-sample">
-                <div class="sample__content">Найдётся всё.&nbsp;<span class="sample__content-text">Например,&nbsp;</span>
-                    <a class="sample__content-link"
+                <div class="sample__content">
+                    <label for="sample-input" class="sample__input-label">
+                        Найдётся всё. Например,&nbsp;
+                    </label>
+                    <a class="sample__input-link"
                        href="https://www.yandex.ru/search/?lr=51&text=%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B2%D0%B5%D1%81%D0%B8%D1%82%20%D1%81%D0%BB%D0%BE%D0%BD">
                         сколько весит слон
                     </a>
                 </div>
                 <div class="promo__content">
                     <a class="promo__content-link" href="#">
-                        <img class="promo__content-icon"
+                        <img class="promo__icon"
                              src="https://avatars.mds.yandex.net/get-banana/26007/x25Cg4cNaSSaxxYhof47XJYvt_banana_20161021_60-36-bro-link-morda-update-7.png/optimize"
                              alt="Установите современный браузер" width="30" height="18">Установите современный браузер
                     </a>
@@ -141,11 +151,11 @@
     </div>
 </div>
 <div class="ba-teaser">
-        <img src="images/ba-teaser.gif" class="ba-teaser__image" alt="Яндекс Такси">
+    <img src="images/ba-teaser.gif" class="ba-teaser__image" alt="Яндекс Такси">
 </div>
 <div class="widgets">
-    <div class="widgets__column">
-        <article class="weather">
+    <div class="widget">
+        <article class="widget__item">
             <h2 class="weather__title">
                 <a class="weather__link" href="https://yandex.ru/pogoda/samara">Погода</a>
             </h2>
@@ -160,7 +170,7 @@
                 </div>
             </div>
         </article>
-        <article class="services">
+        <article class="widget__item">
             <h2 class="services__title">
                 <a class="services__link" href="https://www.yandex.ru/all">Посещаемое</a>
             </h2>
@@ -199,8 +209,8 @@
             </ul>
         </article>
     </div>
-    <div class="widgets__column">
-        <article class="traffic">
+    <div class="widget">
+        <article class="widget__item">
             <h2 class="traffic__title">
                 <a class="traffic__title-jams" href="https://yandex.ru/maps/51/samara/probki">Пробки</a>
             </h2>
@@ -215,7 +225,7 @@
                 </div>
             </div>
         </article>
-        <article class="tv-stream">
+        <article class="widget__item">
             <h2 class="tv-stream__title">
                 <a class="tv-stream__title-link" href="https://tv.yandex.ru/51/">Телепрограмма</a>
             </h2>
@@ -295,8 +305,8 @@
             </ul>
         </article>
     </div>
-    <div class="widgets__column">
-        <article class="region">
+    <div class="widget">
+        <article class="widget__item">
             <h2 class="region__title">
                 <a class="region__title-link" href="https://yandex.ru/maps/?utm_source=geoblock_maps_samara">Карта
                     Самары
@@ -323,7 +333,7 @@
                 </li>
             </ul>
         </article>
-        <article class="poster">
+        <article class="widget__item">
             <h2 class="poster__title">
                 <a href="https://afisha.yandex.ru/samara?utm_source=yamain&amp;utm_medium=yamain_afisha">
                     Афиша
