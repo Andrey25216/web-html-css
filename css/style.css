@@ -182,62 +182,78 @@ a:hover {
     margin-right: 0;
 }
 
-
 .widget__item {
     margin-bottom: 24px;
 }
 
-.widget__item:last-child{
+.widget__item:last-child {
     margin-bottom: 0;
 }
 
-.weather__content-link {
-    font-size: 28px;
-    color: #000000;
-}
-
-.weather__forecast {
+.weather__temp-link {
     display: inline-block;
-    vertical-align: top;
+    font-size: 28px;
+    margin-right: 10px;
+    color: #000000;
 }
 
 .weather__temp {
+    position: relative;
+    display: inline-block;
     vertical-align: top;
+    top: 8px;
+}
+
+.weather__clear {
+    background-image: url("../images/weather/clear.svg");
+    background-size: 100% 100%;
+}
+
+.weather__overcast {
+    background-image: url("../images/weather/overcast.svg");
+    background-size: 100% 100%;
 }
 
 .weather__icon {
-    margin-top: -10px;
-    margin-left: -10px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 48px;
+    height: 48px;
 }
 
-.traffic__content-link {
+.traffic__icon {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 33px;
+    height: 30px;
+}
+
+.traffic__green {
+    background-image: url("../images/traffic/green.svg");
+    background-size: 100% 100%;
+}
+
+.traffic__link {
     font-size: 28px;
     color: #000000;
 }
 
-.traffic__content {
-    height: 35px;
-}
-
-.traffic__content-link {
-    padding-right: 8px;
+.traffic__link {
+    margin-right: 10px;
 }
 
 .traffic__icon {
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 .traffic__forecast {
     display: inline-block;
     vertical-align: top;
-    margin-top: 6px;
+    position: relative;
+    top: 8px;
 }
 
-.traffic__rate {
-    vertical-align: top;
-}
-
-.weather__content-link, .traffic__content-link {
+.weather__link, .traffic__link {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -251,20 +267,16 @@ a:hover {
     font-weight: 400;
 }
 
-.weather__content {
-    height: 35px;
-}
-
-.service__list-title, .service__list-subtitle, .weather__forecast-link,
+.service__list-title, .service__list-subtitle, .weather__forecast-link, .traffic__forecast-link,
 .weather__list-link, .region__list-link, .poster__list-title, .tv-stream__program-title, .promo__content-link {
     color: #000000;
 }
 
-.promo__content-link {
+.promo__content-link, .weather__forecast-link, .traffic__forecast-link {
     display: block;
 }
 
-.weather__content-link {
+.weather__link {
     margin-right: 10px;
 }
 
